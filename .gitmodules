@@ -1,0 +1,3 @@
+[submodule "o-du-l2"]
+	path = o-du-l2
+	url = https://github.com/motangpuar/o-du-l2
