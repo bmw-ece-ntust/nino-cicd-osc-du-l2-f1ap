@@ -177,30 +177,20 @@ RUN cd build/odu && make clean_odu odu MACHINE=BIT64 MODE=FDD O1_ENABLE=NO
 
 | **CU** | **DU-L2** | **DU-L1** | **rfSim** | **UE** | **Remarks** |
 |----|----|----|----|----|----|
-| OAI-CU (**2023.w43**) | OSC-DU-L2 (**master**) | OSC Phy_stub | OSC Phy_stub | OSC Phy_stub | *  **==Tested==**  
-* **Error**: Failed to decode PDU |
-| OAI-CU (**Tony**) | OSC-DU-L2 (**Tony**) | OSC Phy_stub | OSC Phy_stub | OSC Phy_stub | *  **==Tested ==**
-* UE RRC Complete
-* Generate downlink data from CU succeed (gtp)
-* UE is not configurable hence can't be registered into real CN |
-| OAI-CU (**Tony**) | OSC-DU-L2 (**master**) | OSC Phy_stub | OSC Phy_stub | OSC Phy_stub | *  **==Tested  ==**
-* **Error**: F1AP_ProtocolIE_ID_id 89 Unknown |
+| OAI-CU (**2023.w43**) | OSC-DU-L2 (**master**) | OSC Phy_stub | OSC Phy_stub | OSC Phy_stub | *  **==Tested==**  * <ul><li>**Error**: Failed to decode PDU</li></ul> |
+| OAI-CU (**Tony**) | OSC-DU-L2 (**Tony**) | OSC Phy_stub | OSC Phy_stub | OSC Phy_stub | **Tested** <ul><li>UE RRC Complete</li><li>Generate downlink data from CU succeed (gtp)</li><li>UE is not configurable hence can't be registered into real CN </li></ul>|
+| OAI-CU (**Tony**) | OSC-DU-L2 (**master**) | OSC Phy_stub | OSC Phy_stub | OSC Phy_stub | * **Error**: F1AP_ProtocolIE_ID_id 89 Unknown |
 | OAI-CU (**2023.w43**) | OSC-DU-L2 (**Tony**) | OSC Phy_stub | OSC Phy_stub | OSC Phy_stub | *  **==Not Tested Yet==**   |
-| OAI-CU (Tony) | OSC-DU-L2 (Tony) | OAI-L1 | OAI rfSIM | OAI UE | *  **==Not Tested Yet==**  
-* Richard & Ming Already Test
-  * Missing msg1 reply  |
+| OAI-CU (Tony) | OSC-DU-L2 (Tony) | OAI-L1 | OAI rfSIM | OAI UE | **Not Tested Yet**  <ul><li>Richard & Ming Already Test</li><li>Missing msg1 reply</li></ul>  |
 | OAI-CU | OAI-DU-L2 | OAI-DU-L1 | rfSim | UE | *  |
 
 
-\
 ## :warning: Bugs and Findings
 
 
 
-:::warning
-Bugs Here…
-
-:::
+> [!WARNING]
+> Bugs Here…
 
 
 ### 1. ODU Subprocess
